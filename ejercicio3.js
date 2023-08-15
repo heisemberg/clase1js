@@ -9,9 +9,8 @@ while ( i <= limite){
     }
     else if (i % 2 != 0){
         impares+= i
-        }
+    }
     i += 1
 }
-
-console.log("la suma de pares es " + impares)
+console.log("la suma de impares es " + impares)
 console.log("La suma de pares es "+ pares)
