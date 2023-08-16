@@ -1,4 +1,4 @@
-Pila a manera de array : class Stack{
+class Stack{
     constructor(){
         this.items=[]
     }
@@ -32,19 +32,25 @@ Pila a manera de array : class Stack{
         return this.items[this.items.length - 1];
 
     }
+    
+    print(){
+        console.log(this.items);
+    }
 
 }
 
 const stack = new Stack();
 
-stack.push(10);
-stack.push(20);
-stack.push(30);
+stack.push("A");
+stack.push("B");
+stack.push("C");
+stack.push("D");
+stack.push("E");
+stack.push("F");
+console.log(stack.size())
+stack.print()
+stack.size()
 
-console.log(stack.peek())
-stack.pop()
-console.log(stack.peek())
-stack.pop()
-console.log(stack.peek())
-stack.clear()
-console.log(stack.peek())
+while (1<size){
+    stack.peek
+}
