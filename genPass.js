@@ -5,23 +5,34 @@ let b = prompt("Input password 2: ") */
 let list2 = b.split() */
 
 
-let a = "david"
-let b = "lucia"
+let a = "hola"
+let b = "comoesta"
 
 function genPass(a, b){
     let pass = ""
-    if (a.length==b.length){
-        for (i = 0; i<a.length; i++){
-            for (j = 0; j<b.length; j++){ 
-                if (i == j){
-                    pass+=a[i]+b[j]
+    if (1 < a.length <25000 && 1< b.length<25000){
+        if(a.length>b.length){
+            for (let i = 0; i<a.length; i++){
+                if(b[i]!=undefined){
+                    pass+=a[i]+b[i]
                 }
+                else if(b[i]==undefined){
+                    pass+=a[i]
+                }   
             }
-        }
         console.log(pass)
-    }
-    else{
-        console.log("Tienen tamaño diferente")
+        }
+        else{
+            for (let i = 0; i<b.length; i++){
+                if (a[i]!=undefined){
+                    pass+=a[i]+b[i]
+                }
+                else if(a[i]==undefined){
+                    pass+=b[i]
+                }
+            }    
+        console.log(pass)
+        }   
     }
 }
 genPass(a,b)
