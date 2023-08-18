@@ -8,8 +8,15 @@ let list2 = b.split() */
 let a = "hola"
 let b = "comoesta"
 
+/* function aMayus(a,b){
+    let c=a.toUpperCase()
+    let d=b.toUpperCase()
+    return c ,d
+} */
+
 function genPass(a, b){
     let pass = ""
+    
     if (1 < a.length <25000 && 1< b.length<25000){
         if(a.length>b.length){
             for (let i = 0; i<a.length; i++){
